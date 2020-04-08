@@ -1,0 +1,6 @@
+---
+install_tcpdump_packages:
+  debian: &debian
+    - "tcpdump"
+  debian_armv7l: *debian
+  debian_x86_64: *debian

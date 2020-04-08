@@ -1,0 +1,7 @@
+---
+- name: "Install tcpdump"
+  package:
+    pkg: "{{ install_tcpdump_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "tcpdump"
